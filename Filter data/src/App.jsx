@@ -345,7 +345,7 @@ const App = () => {
       const data = Products.filter((p) => p.category === title);
       setRecord(data);
     }
-  }
+  } 
 
   useEffect(() => {
     setRecord(Products)
@@ -362,7 +362,7 @@ const App = () => {
         ))
       }
 
-      <br /><br />
+      <br />
 
       <h1>Products</h1>
       <div className="products-container">

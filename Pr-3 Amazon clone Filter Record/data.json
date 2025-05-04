@@ -1,0 +1,161 @@
+[
+    {
+      "section": "header",
+      "navbar": {
+        "logo": "https://static.vecteezy.com/system/resources/previews/014/018/563/non_2x/amazon-logo-on-transparent-background-free-vector.jpg",
+        "address": {
+          "line1": "Deliver to",
+          "line2": "India"
+        },
+        "search": {
+          "dropdown": ["All"],
+          "placeholder": "Search Amazon"
+        },
+        "signin": {
+          "line1": "Hello, sign in",
+          "line2": "Account & Lists"
+        },
+        "returns": {
+          "line1": "Return",
+          "line2": "& Orders"
+        },
+        "cart": "Cart"
+      },
+      "panel": {
+        "menu": "All",
+        "options": ["Today's Deals", "Customer Services", "Registry", "Gift Cards", "Sell"],
+        "highlight": "Shop Deals in Electronics"
+      }
+    },
+    {
+      "slider": [
+        {
+          "id": 1,
+          "image": "http://127.0.0.1:5500/Amazon%20website%20Clone/assets/img/hero_image.jpg"
+        },
+        {
+          "id": 2,
+          "image": "https://a.media-amazon.com/images/G/31/IMG15/dharshini/Lead-Up_PC_Asin_3000x1200-1_LA_2x._CB796748408_.jpg"
+        },
+        {
+          "id": 3,
+          "image": "https://a.media-amazon.com/images/G/31/IMG15/dharshini/Lead-Up_PC_Asin_3000x1200-1_AC_2x._CB796748408_.jpg"
+        },
+        {
+          "id": 4,
+          "image": "https://a.media-amazon.com/images/G/31/img21/APAY/MAYART/travel/Dubai_Lead-Up_PC_Lifestyle_3000x1200._CB796881523_.jpg"
+        },
+        {
+          "id": 5,
+          "image": "https://a.media-amazon.com/images/G/31/img22/Wireless/devjyoti/MayART25/DealReveled/D237969020_WLD_MayART25_iQOO_Z9s_Up_PC_Lifestyle_3000x1200._CB796510760_.jpg"
+        }
+      ]
+    },
+    
+   
+    {
+        "giftBanner": {
+          "backgroundColor": "#37475a",
+          "title": "Find gifts for",
+          "subtitle": "dads who have it all",
+          "textColor": "white",
+          "imageSide": {
+            "images": [
+              {
+                "alt": "Headphones",
+                "url": "https://a.media-amazon.com/images/I/61OHplw85eL.__AC_SX300_SY300_QL70_FMwebp_.jpg"
+              },
+              {
+                "alt": "Camera",
+                "url": "https://a.media-amazon.com/images/I/71LaQQPOhXL.__AC_SX300_SY300_QL70_FMwebp_.jpg"
+              },
+              {
+                "alt": "Phone",
+                "url": "https://a.media-amazon.com/images/I/51fYXSnSu9L.__AC_SX300_SY300_QL70_FMwebp_.jpg"
+              },
+              {
+                "alt": "Speaker",
+                "url": "https://a.media-amazon.com/images/I/81l7mB5LhsL.__AC_SX300_SY300_QL70_FMwebp_.jpg"
+              },
+              {
+                "alt": "Sunglasses",
+                "url": "https://a.media-amazon.com/images/I/719G6MA0A8L._AC_SX679_.jpg"
+              }
+            ]
+          }
+        },
+        "infoBanner": {
+          "text": "You are on amazon.com. You can also shop on Amazon India for millions of Products with fast local delivery.",
+          "linkText": "Click here to go to amazon.in",
+          "linkUrl": "https://www.amazon.in",
+          "backgroundColor": "#ffffff",
+          "textColor": "#000000",
+          "alignment": "center"
+        }
+      },
+      
+    {
+      "section": "shop",
+      "categories": [
+        {
+          "title": "Cloth",
+          "image": "https://images.pexels.com/photos/1884583/pexels-photo-1884583.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+        },
+        {
+          "title": "Health Care",
+          "image": "https://images.pexels.com/photos/3757657/pexels-photo-3757657.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        },
+        {
+          "title": "Furniture",
+          "image": "https://images.pexels.com/photos/7535030/pexels-photo-7535030.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        },
+        {
+          "title": "Electronics",
+          "image": "https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        },
+        {
+          "title": "Beauty Picks",
+          "image": "https://images.pexels.com/photos/1545590/pexels-photo-1545590.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        },
+        {
+          "title": "Pet Care",
+          "image": "https://images.pexels.com/photos/2607544/pexels-photo-2607544.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        },
+        {
+          "title": "New Arrivals Toys",
+          "image": "https://images.pexels.com/photos/163077/mario-yoschi-figures-funny-163077.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        },
+        {
+          "title": "Watch",
+          "image": "https://images.pexels.com/photos/277319/pexels-photo-277319.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        }
+      ]
+    },
+    {
+      "section": "footer",
+      "backToTop": "Back to Top",
+      "infoSections": [
+        {
+          "title": "Get to Know Us",
+          "links": ["Careers", "Blog", "About Amazon", "Investor relations", "Amazon Devices", "Amazon Science"]
+        },
+        {
+          "title": "Get to Know Us",
+          "links": ["Careers", "Blog", "About Amazon", "Investor relations", "Amazon Devices", "Amazon Science"]
+        },
+        {
+          "title": "Get to Know Us",
+          "links": ["Careers", "Blog", "About Amazon", "Investor relations", "Amazon Devices", "Amazon Science"]
+        },
+        {
+          "title": "Get to Know Us",
+          "links": ["Careers", "Blog", "About Amazon", "Investor relations", "Amazon Devices", "Amazon Science"]
+        }
+      ],
+      "bottomLogo": "https://static.vecteezy.com/system/resources/previews/014/018/563/non_2x/amazon-logo-on-transparent-background-free-vector.jpg",
+      "footerLinks": ["Condition Of Use", "Privacy Notes", "Your Ads Privacy Choices"],
+      "copyright":
+        "© 1996-2024, Amazon.com, Inc. or its affiliates"
+    }
+  ]
+  

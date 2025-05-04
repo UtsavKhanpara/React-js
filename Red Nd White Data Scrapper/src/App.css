@@ -1,0 +1,108 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* White background */
+    color: #333333; /* Dark text color */
+}
+
+/* Header Styles */
+header {
+    background-color: #ff0000; /* Red background */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header img {
+    max-width: 150px; /* Logo size */
+}
+
+/* Headings */
+h1, h2, h3 {
+    margin: 20px 0;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+    color: #ff0000; /* Red for subheadings */
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+/* List Styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: #ffffff; /* White background for list items */
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styles */
+button {
+    padding: 10px 20px;
+    background-color: #ff0000; /* Red button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #cc0000; /* Darker red on hover */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #ff0000; /* Red footer */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #ffffff; /* White links */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Review Section */
+.review {
+    background: #ffffff; /* White background for reviews */
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+}

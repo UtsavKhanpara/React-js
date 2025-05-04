@@ -5,7 +5,7 @@ const Crud = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [update, setUpdate] = useState("");
-  const [record, setRecord] = useState(JSON.parse(localStorage.getItem("users")) || [])
+  const [record, setRecord] = useState([]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -17,28 +17,25 @@ const Crud = () => {
 
     if (update) {
       const updateRecord = record.map((data) => {
-        return data.id === update ? { id: update, name: name, email: email } : data;
+        return data.id === update
+         ? { id: update, name: name, email: email } 
+         : data;
       })
       setRecord(updateRecord);
-      localStorage.setItem(`users`, JSON.stringify(updateRecord));
-      alert("Record Updated");
-    } else {
-      const isDuplicate = record.some((data) => data.email ===  email || data.name === name);
-      if (isDuplicate) {
-        alert("Record Already Exists")
-      }
       setName("");
       setEmail("");
       setUpdate("");
-    } 
-
-      let newRecord = [...record, { id: Math.floor(Math.random() * 100000), name: name, email: email }]
+      // localStorage.setItem(`users`, JSON.stringify(updateRecord));
+      alert("Record Updated");
+    } else {
+       let newRecord = [...record, { id: Math.floor(Math.random() * 100000), name: name, email: email }]
       setRecord(newRecord);
-      localStorage.setItem(`users`, JSON.stringify(newRecord));
+      // localStorage.setItem(`users`, JSON.stringify(newRecord));
       alert("Record Added")
-
-
-
+      setName("");  
+      setEmail("");
+      setUpdate("");
+    } 
 
   }
 
@@ -52,7 +49,7 @@ const Crud = () => {
   const handleDelete = (id) => {
     const deletedata = record.filter((data) => data.id != id)
     setRecord(deletedata);
-    localStorage.setItem(`users`, JSON.stringify(deletedata));
+    // localStorage.setItem(  `users`, JSON.stringify(deletedata));
     alert("Record Deleted")
   }
 

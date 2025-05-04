@@ -5,6 +5,8 @@ import Todo from './Todo';
 import Simpleloginlogout from './Simpleloginlogout';
 import Crud from './Crud';
 import CartApp from './Add to cart/Add';
+import DynamicForm from './DynamicForm';
+
 
 
 
@@ -45,9 +47,11 @@ const App = () => {
 
   return (
 
-    
+  
     <div>
 
+        <DynamicForm/>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
       <h1 style={{textAlign:"center"}}>Timer App</h1>
       <h2 style={{textAlign:"center"}}>Count:{count}</h2>
       <br />

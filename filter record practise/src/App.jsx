@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import MahabharataChatbot from './MahabharataChatbot';
 
 const App = () => {
 
@@ -349,6 +350,7 @@ const App = () => {
 
     return ( 
         <div align="center">
+         
             <h1>Filter App</h1>
             {
                 category.map((c,index)=>{

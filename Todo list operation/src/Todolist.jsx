@@ -1,7 +1,7 @@
     import React, { useState } from 'react'
 
     const Todolist = () => {
-
+ 
         const [name, setName] = useState("");
         const [password, setPassword] = useState("");
         const [email, setEmail] = useState("");
@@ -15,6 +15,7 @@
                 alert("ALL FILED REQUIRE TO FILL");
                 return false;
             }
+            
 
             if (update) {
                 const updateRecord = record.map((data) => {
@@ -35,15 +36,16 @@
                 }
             }
 
+
             let newRecord = [...record, { id: Math.floor(Math.random() * 102808202), name: name, email: email, password: password, status: "Active" }]
             setRecord(newRecord);
             alert("Record Sucsessfully Added");
             setName("");
             setEmail("");
             setPassword("");
-        }
+            }
 
-        const handleUpdate = (id) => {
+            const handleUpdate = (id) => {
             const update = record.find((data) => data.id === id)
             setName(update.name);
             setEmail(update.email);
@@ -61,8 +63,6 @@
             const status = record.map((data) => data.id === id ? { ...data, status: data.status === "Active" ? "Deactive" : "Active" } : data)
             setRecord(status)
         }
-
-
 
 
         return (

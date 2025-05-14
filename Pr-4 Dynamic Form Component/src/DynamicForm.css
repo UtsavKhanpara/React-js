@@ -1,0 +1,74 @@
+.tbl-main {
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 60%;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  
+}
+
+th {
+  background: #e3e3e3;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+}
+
+td {
+  padding: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+  width: 95%;
+  padding: 8px;
+  border: 2px solid black;
+  border-radius: 5px;
+  outline: none;
+}
+
+.addBtn {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.removeBtn {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submitBtn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}

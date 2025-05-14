@@ -1,65 +1,49 @@
-import React, { useState } from 'react'
-
+import React, { useState } from 'react';
 const App = () => {
+  const [input, setInput] = useState({
+    name: '',
+    email: '',
+  });
 
-  const[name,setName]=useState();
-  const[age,setAge]=useState();
-  const[email,setEmail]=useState();
-  const[number,setNumber]=useState();  
-  const[date,setDate]=useState();
-  const[password,setPassword]=useState();
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+   const obj={
+    ...input,
+    [name]:value
+   }
+   setInput(obj)
+  };
 
-  const handleSubmit=(e)=>{
+  const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(name);
-    console.log(age);
-    console.log(email);
-    console.log(number);
-    console.log(date);
-    console.log(password);
-  }
-
+    console.log("Form Submitted:", input);
+  };
 
   return (
     <div align="center">
-      <h1>Controll Component Example</h1>
-
+      <h1>Form Data</h1>
       <form onSubmit={handleSubmit}>
-        <table border={1}>
-          <tbody>
-            <tr>
-              <td>Enter Name:</td>
-              <td><input type="text" value={name} onChange={(e)=>setName(e.target.value)} /></td>
-            </tr>
-            <tr>
-              <td>Enter Age:</td>
-              <td><input type="number" value={age} onChange={(e)=>setAge(e.target.value)} /></td>
-            </tr>
-            <tr>
-              <td>Enter Email:</td>
-              <td><input type="email" value={email} onChange={(e)=>setEmail(e.target.value)} /></td>
-            </tr>
-            <tr>
-              <td>Enter Phone Number:</td>
-              <td><input type="tel" value={number} onChange={(e)=>setNumber(e.target.value)} /></td>
-            </tr>
-            <tr>
-              <td>Enter Date:</td>
-              <td><input type="date" value={date} onChange={(e)=>setDate(e.target.value)} /></td>
-            </tr>
-            <tr>
-              <td>Enter Password:</td>
-              <td><input type="password" value={password} onChange={(e)=>setPassword(e.target.value)} /></td>
-            </tr>
-            <tr>
-              <td><input type="submit" /></td>
-            </tr>
-          </tbody>
-        </table>
+        <label>Enter Name:- </label>
+        <input
+          type="text"
+          name="name"
+          placeholder="Enter Your Name"
+          onChange={handleChange}
+          value={input.name}
+        />
+        <br /><br />
+        <label>Enter Email:- </label>
+        <input
+          type="text"
+          name="email"
+          placeholder="Enter Your Email"
+          onChange={handleChange}
+          value={input.email}
+        />
+        <br /><br />
+        <button type="submit">Add</button>
       </form>
-
     </div>
-  )
-}
-
-export default App
+  );
+};
+export default App;

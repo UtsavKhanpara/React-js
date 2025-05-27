@@ -3,11 +3,16 @@ import './DynamicForm.css';
 
 const DynamicForm = () => {
   const [input, setInput] = useState([
-    { id:"", name: '', email: '', salary: '' }
+    {
+      id: Math.floor(Math.random() * 10000),
+      name: '',
+      email: '',
+      salary: ''
+    }
   ]);
 
   const addInput = () => {
-    setInput([...input, { id:Math.floor(Math.random()*10000), name: '', email: '', salary: '' }]);
+    setInput([...input, { id: Math.floor(Math.random() * 10000), name: '', email: '', salary: '' }]);
   };
 
   const removeInput = (id) => {
@@ -16,9 +21,9 @@ const DynamicForm = () => {
 
   const handleInputChange = (e, id) => {
     const { name, value } = e.target;
-    const updatedInputs = input.map(item =>
-      item.id === id ? { ...item, [name]: value } : item
-    );
+    const updatedInputs = input.map(item => item.id === id ?
+      { ...item, [name]: value }
+      : item);
     setInput(updatedInputs);
   };
 
@@ -26,10 +31,10 @@ const DynamicForm = () => {
     console.log("Submitted Data:", input);
 
     setInput([{
-        id: "",
-        name:"",
-        email:"",
-        salary:""
+      id: "",
+      name: "",
+      email: "",
+      salary: ""
     }])
   };
 
@@ -40,7 +45,7 @@ const DynamicForm = () => {
         <thead>
           <tr>
             <th>Full Name</th>
-            <th>Email Address</th>
+            <th>Email Address </th>
             <th>Salary</th>
             <th>
               <button className='addBtn' onClick={addInput}>+</button>

@@ -1,0 +1,240 @@
+* {
+    outline: none;
+}
+.container {
+    max-width: 1200px;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+}
+ul,
+ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+button{
+    transition: all 0.5s !important;
+}
+
+/* Header start  */
+
+header ul.searchBarMenu li a:hover {
+    color: green !important;
+}
+
+header ul.searchBarMenu li:hover a.account ul {
+    top: 35px !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+
+header ul.searchBarMenu li a,
+header .searchBarMenu li a.account ul {
+    transition: all 0.5s;
+}
+
+
+header ul.searchBarMenu li a.account ul li:hover a {
+    color: green !important;
+}
+
+/* Header end  */
+
+/* NavBar start  */
+nav ul.navbarMenu li a,
+nav ul.navbarMenu li ul.dropdown,
+nav div.categoriesToggle ul.NavBar-Category {
+    transition: all 0.5s;
+}
+nav ul.navbarMenu li a:hover {
+    color: green !important;
+}
+
+nav ul.navbarMenu li:hover ul.dropdown {
+    top: 37px !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+nav div.categoriesToggle:hover ul.NavBar-Category {
+     visibility: visible !important;
+    top: 43px !important;
+    opacity: 1 !important;
+   
+    
+}
+
+
+
+/* NavBar end  */
+
+/* BannerSlider start  */
+
+.BannerSlider button:hover {
+    background-color: #000;
+    border-color: #000;
+}
+
+/* BannerSlider end  */
+
+/* Offer start  */
+
+
+.Offer .OfferBanner:hover::before {
+    border-radius: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  
+}
+
+.Offer .OfferBanner button:hover {
+    background-color: #000;
+    border-color: white;
+}
+
+.Offer .OfferBanner::before {
+    position: absolute;
+    content: '';
+    border-radius: 0 50% 50% 50%;
+    height: 200px;
+    background-color: #0006;
+    top: -15%;
+    left: -7%;
+    z-index: 1;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    width: 200px;
+}
+
+
+/* Offer end  */
+
+
+
+/* PopularProduct start  */
+
+.PopularProduct div.product-card div.card-body a,
+.PopularProduct div.product-card div.card-body a span,
+.PopularProduct div.product-card div.icons {
+    transition: all 0.3s;
+}
+
+.PopularProduct div.product-card:hover div.icons {
+    right: 10% !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.PopularProduct div.product-card div.card-body a:hover,
+.PopularProduct div.product-card div.card-body a:hover span {
+    color: green !important;
+}
+
+.PopularProduct button:hover {
+    background-color: #000;
+    border-color: #000;
+}
+
+
+
+/* PopularProduct end  */
+
+/* OfferSlider start  */
+
+.OfferSlider button:hover {
+    background-color: #000;
+    border-color: #000;
+}
+
+/* OfferSlider end  */
+
+/* ProductCardSlider start  */
+
+.ProductCardSlider div.product-card div.card-body a,
+.ProductCardSlider div.product-card div.card-body a span,
+.ProductCardSlider div.product-card div.icons {
+    transition: all 0.3s;
+}
+
+.ProductCardSlider button:hover {
+    background-color: #000;
+    border-color: #000;
+}
+.ProductCardSlider div.product-card div.card-body a:hover,
+.ProductCardSlider div.product-card div.card-body a:hover span {
+    color: green !important;
+}
+
+
+.ProductCardSlider div.product-card:hover div.icons {
+    right: 10% !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+
+/* ProductCardSlider end  */
+
+/* Blog start  */
+
+.Blog .blog-content a,.Blog .blog-card .blog-img img{
+    transition: all 0.3s;
+}
+
+.Blog .blog-card:hover .blog-img img{
+    transform: scale(1.1) rotate(4deg);
+}
+
+.Blog .blog-content a:hover{
+    color: green !important;
+}
+
+
+
+/* Blog end  */
+
+/* footer start   */
+
+footer .footer-img a::before{
+    transition: all 0.5s;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: #0009;
+    border-radius: 6px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    content: '';
+    opacity: 0;
+    visibility: hidden;
+    
+}
+
+footer a,footer a i{
+    transition: all 0.3s;
+}
+footer a:hover{
+    color: green !important;
+}
+footer a:hover i{
+    color: green !important;
+}
+
+footer .footer-img a:hover::before,footer .footer-img a:hover i{
+     color: white !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+   
+}
+
+/* footer end  */

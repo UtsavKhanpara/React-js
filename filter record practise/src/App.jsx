@@ -1,5 +1,4 @@
-import React, { useState } from 'react'
-import MahabharataChatbot from './MahabharataChatbot';
+import React, { useEffect, useState } from 'react'
 
 const App = () => {
 
@@ -346,6 +345,10 @@ const App = () => {
             setRecord(data);
         }
     }
+
+    useEffect(()=>{
+        setRecord(Products)
+    },[])
     
 
     return ( 

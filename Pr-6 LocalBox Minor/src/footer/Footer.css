@@ -1,0 +1,57 @@
+.clinic-footer {
+  /* Deep Teal */
+  background-color: #34495e;
+  color: white;
+  padding: 40px 20px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 40px;
+
+}
+
+.footer-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section {
+  flex: 1 1 200px;
+  min-width: 220px;
+}
+
+.footer-section h3 {
+  color: rgb(23, 199, 199);
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.footer-section p,
+.footer-section li,
+.footer-section a {
+  font-size: 14px;
+  color: #e0f7fa;
+  line-height: 1.9;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #009999;
+  margin-top: 30px;
+  padding-top: 15px;
+  font-size: 13px;
+  color: #b2dfdb;
+}

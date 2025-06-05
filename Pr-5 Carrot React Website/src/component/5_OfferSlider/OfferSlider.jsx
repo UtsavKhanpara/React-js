@@ -10,7 +10,7 @@ const OfferSlider = () => {
             perPage: 3,
             perMove: 1,
             focus: 'center',
-            autoplay: true,
+            autoplay: true, 
             interval: 3000,
             speed: 1000,
             pauseOnHover: false,

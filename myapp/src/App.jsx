@@ -17,7 +17,7 @@ const App = () => {
         Hello Dear 👋
       </h1>
 
-      <Home a={a} mul={mul} colors={colors} shoes={shoes} />
+      <Home a={a} mul={mul} colors={colors} shoes={shoes} />zz
     </div>
   );
 };

@@ -65,8 +65,6 @@ const App = () => {
     localStorage.setItem("users", JSON.stringify(deleteData));
   }
 
-
-
   return (
     <>
       <Header />

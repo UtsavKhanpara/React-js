@@ -10,7 +10,7 @@ const Add = () => {
     diagnosis: "",
     birthdate: "",
     contact: ""
-  })
+  }) 
 
   let navigator = useNavigate()
   let [allrecord, setAllrecord] = useState(JSON.parse(localStorage.getItem('users')) || [])
@@ -45,7 +45,7 @@ const Add = () => {
     navigator('/view')
   }
 
-  return (
+  return ( 
     <div className='form-wrapper'>
       <div className='form-card'>
         <h1 className='form-title'>➕ Add Patient Record</h1>

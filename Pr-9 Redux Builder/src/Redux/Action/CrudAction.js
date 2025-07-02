@@ -9,7 +9,7 @@ const ADD_NOTE = (allData) => {
 const DELETE_NOTE = (id) => {
     return {
         type : "DELETE_NOTE",
-        payload : id
+         payload : id
     }
 }
 

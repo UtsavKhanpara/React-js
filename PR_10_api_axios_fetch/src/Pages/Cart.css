@@ -1,0 +1,41 @@
+/* Smooth fade animation */
+.fade-in {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Card styling */
+.cart-premium {
+  background-color: #fafafa;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 1rem;
+}
+
+.cart-premium:hover {
+  transform: scale(1.01);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Product image */
+.product-image-wrapper {
+  height: 220px;
+  background-color: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.product-image-wrapper img {
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* Gradient header */
+.bg-gradient-primary {
+  background: linear-gradient(135deg, #3f51b5, #2196f3);
+}

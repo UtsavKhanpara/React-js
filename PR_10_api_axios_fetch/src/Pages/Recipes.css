@@ -1,0 +1,74 @@
+/* Fade-in animation for card */
+.fade-in {
+  animation: fadeIn 0.7s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Triangle-styled card */
+.triangle-card {
+ background: linear-gradient(135deg, #7b4397, #dc2430);
+  color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  position: relative;
+}
+
+.triangle-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Image wrapper */
+.image-wrapper {
+  position: relative;
+  height: 230px;
+  overflow: hidden;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.triangle-card:hover .image-wrapper img {
+  transform: scale(1.1);
+}
+
+/* Card content with triangle-style bottom */
+.card-body {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+}
+
+.card-body h5 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.card-body p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: black;
+}
+
+/* Optional: If you want a separate triangle decoration */
+.triangle-shape {
+  display: none; /* not needed as we use clip-path */
+}

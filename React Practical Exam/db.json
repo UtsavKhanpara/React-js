@@ -1,0 +1,77 @@
+{
+  "rooms": [
+    {
+      "id": "1",
+      "type": "Deluxe",
+      "features": [
+        "AC",
+        "TV",
+        "WiFi"
+      ],
+      "price": 3000,
+      "available": true,
+      "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
+    },
+    {
+      "id": "2",
+      "type": "Standard",
+      "features": [
+        "Fan",
+        "TV"
+      ],
+      "price": 1500,
+      "available": true,
+      "image": "https://img.freepik.com/free-photo/beautiful-luxury-outdoor-swimming-pool-hotel-resort_74190-7433.jpg"
+    },
+    {
+      "id": "3",
+      "type": "Executive Suite",
+      "features": [
+        "AC",
+        "TV",
+        "WiFi",
+        "Mini Bar"
+      ],
+      "price": 4500,
+      "available": false,
+      "image": "https://images.unsplash.com/photo-1611892440504-42a792e24d32"
+    },
+    {
+      "id": "4",
+      "type": "Single",
+      "features": [
+        "Fan"
+      ],
+      "price": 1000,
+      "available": true,
+      "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "5",
+      "type": "Luxury Suite",
+      "features": [
+        "AC",
+        "TV",
+        "WiFi",
+        "Jacuzzi",
+        "Balcony"
+      ],
+      "price": 6000,
+      "available": true,
+      "image": "https://images.unsplash.com/photo-1582719508461-905c673771fd?q=80&w=725&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "6",
+      "type": "Family Room",
+      "features": [
+        "AC",
+        "WiFi",
+        "Extra Bed"
+      ],
+      "price": 3500,
+      "available": false,
+      "image": "https://images.unsplash.com/photo-1650965171703-087486b3a1b0?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    }
+  ],
+  "reservations": []
+}

@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 
 const Add = () => {
 
-  const [name,setName]=useState("");
-  const [email,setEmail]=useState("");
-  const [phone,setPhone]=useState("");
+  const[name,setName]=useState("");
+  const[email,setEmail]=useState("");
+  const[phone,setPhone]=useState("");
 
   const handleSubmit=(e)=>{
     e.preventDefault();
@@ -13,7 +14,7 @@ const Add = () => {
     <div align="center">
       <h1>ADD USER</h1>
       <form onSubmit={handleSubmit}>
-        <table border={1}>
+        <table border={1} cellPadding="5px" cellSpacing="5px">
           <tbody>
             <tr>
               <td>Name:-</td>
@@ -24,12 +25,14 @@ const Add = () => {
               <td><input type="email" placeholder='Enter Email' value={email} onChange={(e)=>setEmail(e.target.value)} /></td>
             </tr>
             <tr>
-              <td>Password:-</td>
-              <td><input type="number" placeholder='Enter Phone' value={phone} onChange={(e)=>setPhone(e.target.value)} /></td>
+              <td>Phone:-</td>
+              <td><input type="number" maxLength={10} placeholder='Enter Phone' value={phone} onChange={(e)=>setPhone(e.target.value)} /></td>
             </tr>
           </tbody>
         </table>
       </form>
+      <hr />
+      <Link to={'/view'}>VIEW</Link>
     </div>
   )
 }
